@@ -44,12 +44,19 @@
     			<li><a href="images/sampson_dinosaur.jpg" title="Scott Sampson">
     				<img src="images/sampson75.jpg" alt=""></a></li>
   			</ul>
-  			<h2>David Brancaccio</h2>
-  			<p><img src="images/brancaccio_EEC.jpg" alt=""></p>
+  			<h2 id="caption">David Brancaccio</h2>
+  			<p><img id="image" src="images/brancaccio_EEC.jpg" alt=""></p>
 		</section>
 	</main>
 	<footer>
-  		<p>&copy; 2016, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+  		<p>
+			<script>
+				var today = new Date();
+				document.write( "&copy;&nbsp;" );
+				document.write( today.getFullYear() );
+				document.write( ", San Joaquin Valley Town Hall, Fresno, CA 93755" )
+			</script>
+		</p>
 	</footer>
 </body>
 </html>
